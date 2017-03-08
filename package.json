@@ -1,0 +1,24 @@
+{
+  "name": "spinu",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "6.18.0",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-mounter": "^1.2.0",
+    "semantic-ui-css": "^2.2.4",
+    "semantic-ui-react": "^0.64.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.1"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {"browsers": ["last 2 versions"]}
+    }
+  }
+}
