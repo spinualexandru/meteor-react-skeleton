@@ -8,7 +8,6 @@ export default class Navbar extends Component {
             <Menu>
                 <ImageLink url="https://semantic-ui.com/images/logo.png"/>
                 <Link text='Home' to='/'/>
-                <Link text='Contact' to='/contact'/>
             </Menu>
         )
     }
