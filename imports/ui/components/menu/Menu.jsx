@@ -1,33 +1,14 @@
 import React, {Component} from 'react'
 import {Menu} from 'semantic-ui-react'
-
+import Link,{ImageLink} from './MenuLink.jsx';
 export default class Navbar extends Component {
-    constructor() {
-        super();
-        this.state = {
-            activeItem: 'Home'
-        }
-    }
+
     render() {
         return (
             <Menu>
-                <Menu.Item
-                    name='editorials'
-                    active={activeItem === 'editorials'}>
-                    Editorials
-                </Menu.Item>
-
-                <Menu.Item
-                    name='reviews'
-                    active={activeItem === 'reviews'}>
-                    Reviews
-                </Menu.Item>
-
-                <Menu.Item
-                    name='upcomingEvents'
-                    active={activeItem === 'upcomingEvents'}>
-                    Upcoming Events
-                </Menu.Item>
+                <ImageLink url="https://semantic-ui.com/images/logo.png"/>
+                <Link text='Home' to='/'/>
+                <Link text='Contact' to='/contact'/>
             </Menu>
         )
     }

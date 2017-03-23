@@ -5,7 +5,7 @@ import Navbar from '/imports/ui/components/menu/Menu.jsx';
 const App = ({main, routeProps, user}) => {
     return (
         <div id="app">
-            {user ? <Navbar user={user} /> : null}
+            <Navbar />
             {React.createElement(main, routeProps)}
         </div>
     )
