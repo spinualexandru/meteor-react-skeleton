@@ -5,9 +5,10 @@ export default class Navbar extends Component {
 
     render() {
         return (
-            <Menu>
-                <ImageLink url="https://semantic-ui.com/images/logo.png"/>
+            <Menu pointing secondary>
                 <Link text='Home' to='/'/>
+                <Link text='Controllers' to='/bot/controllers'/>
+                <Link text='Workers' to='/bot/workers'/>
             </Menu>
         )
     }
